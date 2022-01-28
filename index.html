@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>L'aiguille - Šūšanas darbnīca</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Web Fonts-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+</head>
+
+<body>
+    <!--Navigation Bar Script-->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("nav_bar").style.top = "0";
+            } else {
+                document.getElementById("nav_bar").style.top = "-75px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <!--Navigation Bar-->
+    <nav id="nav_bar">
+        <a href="#home">Sākums</a>
+        <a href="#services">Pakalpojumi</a>
+        <a href="#about_us">Par mums</a>
+        <a href="#contacts">Kontakti</a>
+    </nav>
+    <!--Welcome-->
+    <div class="main_wrapper">
+        <div class="main_background"></div>
+        <h1>L 'aiguille - Šūšanas darbnīca</h1>
+    </div>
+    <!--Services-->
+    <main class="services">
+        <header>Mūsu pakalpojumi</header>
+        <div class="services_container">
+            <!--Clothing repair-->
+            <section class="service">
+                <img src="img/custom.jpg" class="cover">
+                <h1>Apģērbu remonts</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam eius libero fuga, possimus
+                    eligendiquibusdam nam facilis nobis, in id ea repellat corporis esse deleniti porro veniam quae
+                    dolorem
+                    reprehenderit.</p>
+                <button>REMONTS</button>
+            </section>
+            <!--Custom clothing-->
+            <section class="service">
+                <img src="img/construction.jpg" class="cover">
+                <h1>Apģērbu izgatavošana</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam eius libero fuga, possimus eligendi
+                    quibusdam nam facilis nobis, in id ea repellat corporis esse deleniti porro veniam quae dolorem
+                    reprehenderit.</p>
+                <button>IZGATAVOŠANA</button>
+            </section>
+            <!--Tailoring-->
+            <section class="service">
+                <img src="img/tailoring.jpg" class="cover">
+                <h1>Apģērbu piešūšana</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam eius libero fuga, possimus eligendi
+                    quibusdam nam facilis nobis, in id ea repellat corporis esse deleniti porro veniam quae dolorem
+                    reprehenderit.</p>
+                <button>PIEŠŪŠANA</button>
+            </section>
+        </div>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer_container">
+            <!--About Us-->
+            <section class="about_us">
+                <h1>L 'aiguille</h1>
+                <p>Kkāds random teksts par uzņēmumu, īss apraksts par uzņēmuma stilu un apkalpošanas veidu</p>
+                <div class="social_media">
+                    <div class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    <div class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                    <div class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                </div>
+            </section>
+            <section class="working_hours">
+                <header>Darba laiks:</header>
+                <ul>
+                    <li>Pirmdiena 9.00 - 17.00</li>
+                    <li>Otrdiena 9.00 - 17.00</li>
+                    <li>Trešdiena 9.00 - 17.00</li>
+                    <li>Ceturtdiena 9.00 - 17.00</li>
+                    <li>Piektdiena 9.00 - 17.00</li>
+                    <li>Sestdiena Brīvs</li>
+                    <li>Svētdiena Brīvs</li>
+                </ul>
+            </section>
+            <section class="contacts">
+                <header>Atrodi mūs</header>
+                <ul>
+                    <li>Totāli neīsta adrese</li>
+                    <li>LV - XXXX</li>
+                    <li>Rīga</li>
+                    <li>Latvija</li>
+                </ul>
+                <ul>
+                    <li>laiguille@gmail.com</li>
+                    <li>(+371) XX XXX XXX</li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+    <div class="author">
+        <header>Projekta autors: Gvido Andis Čams</header>
+    </div>
+</body>
+
+</html>
